@@ -26,7 +26,7 @@ sendBtn.addEventListener('click', async () => {
 function addMessage(text, sender) {
     const div = document.createElement('div');
     div.className = `message ${sender}`;
-    console.log(div);
+   
     if(sender==="bot"){
         div.innerHTML=marked.parse(text);
     }
